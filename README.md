@@ -1,4 +1,4 @@
-# 🛒 Shopping List CLI (Phase 3 Project)
+# Shopping List CLI (Phase 3 Project)
 
 ## Overview
 A Python CLI app for managing shopping categories, items, and shopping lists using **SQLAlchemy ORM** and **SQLite**.
