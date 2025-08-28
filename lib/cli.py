@@ -5,7 +5,7 @@ from helpers import (
 
 def main():
     while True:
-        print("\n📋 Shopping List CLI")
+        print("\n Shopping List CLI")
         print("1. View categories")
         print("2. Add category")
         print("3. View items")
@@ -24,7 +24,7 @@ def main():
         elif choice == "6": view_shopping_lists()
         elif choice == "0": exit_program()
         else:
-            print("❌ Invalid choice, try again.")
+            print("Invalid choice, try again.")
 
 if __name__ == "__main__":
     main()
