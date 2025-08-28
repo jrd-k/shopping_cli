@@ -6,7 +6,7 @@ fake = Faker()
 session = Session()
 
 def seed():
-    print("🌱 Seeding database...")
+    print("Seeding database...")
 
     # Drop and recreate tables
     Base.metadata.drop_all(engine)
@@ -43,7 +43,7 @@ def seed():
     session.add(sl)
     session.commit()
 
-    print("✅ Database seeded successfully!")
+    print("Database seeded successfully!")
 
 if __name__ == "__main__":
     seed()
