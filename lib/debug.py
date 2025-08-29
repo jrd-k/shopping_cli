@@ -1,8 +1,19 @@
-from db.models import Session, Category, Item, ShoppingList
+# lib/debug.py
+from .helpers import init_db, SessionLocal
+from .models.model_1 import Category, Item, ShoppingList
+from .cli import main_menu
 
-session = Session()
+def run_debug():
+    init_db()  # Create tables
+    session = SessionLocal()
 
-# Quick test
-print(session.query(Category).all())
-print(session.query(Item).all())
-print(session.query(ShoppingList).all())
+    # Quick test
+    print("Categories:", session.query(Category).all())
+    print("Items:", session.query(Item).all())
+    print("Shopping Lists:", session.query(ShoppingList).all())
+
+    # Launch CLI
+    main_menu()
+
+if __name__ == "__main__":
+    run_debug()
